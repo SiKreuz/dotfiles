@@ -33,10 +33,19 @@ packer.startup(function(use)
     use 'neovim/nvim-lspconfig' -- LSP configs
     use 'hrsh7th/nvim-cmp' -- Completion
 
-    -- Fast status bar written in lua
+    -- Gruvbox color theme
     use {
+        'folke/tokyonight.nvim',
+        config = function()
+            vim.cmd [[colorscheme tokyonight]]
+            require('highlights')
+        end
+    }
+
+    -- Fast status bar written in lua
+    use { 
         'nvim-lualine/lualine.nvim',
-        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+        requires = {'kyazdani42/nvim-web-devicons', opt = true}
     }
 
     --use 'zbirenbaum/copilot.lua'
