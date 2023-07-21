@@ -1,0 +1,2 @@
+alias gpg-refresh="gpg --keyserver-options no-self-sigs-only --refresh-keys"
+alias hs="history | grep "

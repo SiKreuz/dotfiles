@@ -1,0 +1,8 @@
+[user]
+	email = mail@monsi.org
+	name = Simon Kreuzer
+	signingkey = 731B8C67AA3670FF!
+[commit]
+	gpgsign = true
+[push]
+	autoSetupRemote = true
