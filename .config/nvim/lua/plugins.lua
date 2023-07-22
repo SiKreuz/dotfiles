@@ -48,8 +48,12 @@ packer.startup(function(use)
         requires = {'kyazdani42/nvim-web-devicons', opt = true}
     }
 
-    --use 'zbirenbaum/copilot.lua'
-    use 'github/copilot.vim'
+    use {
+	'zbirenbaum/copilot.lua',
+	config = function()
+	    require('copilot').setup({})
+	end,
+    }
 
     -- LSP settings
     if packer_bootstrap then
