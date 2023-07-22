@@ -1,2 +1,23 @@
-alias gpg-refresh="gpg --keyserver-options no-self-sigs-only --refresh-keys"
-alias hs="history | grep "
+# Confirm before overwriting
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm  -i'
+
+# Git
+alias ga='git add -A'
+alias cl='git clone'
+alias commit='git commit -m'
+alias track='git lg'
+
+# GPG
+alias gpg-refresh='gpg --keyserver-options no-self-sigs-only --refresh-keys'
+
+# Replace program
+alias cat='bat'
+alias ls='exa --color=always --group-directories-first'
+alias lt='exa -aT --color=always --group-directories-first'
+alias l.='exa -a | egrep "^\."'
+
+# Other
+alias hs='history | grep'
+
