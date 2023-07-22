@@ -45,9 +45,15 @@ packer.startup(function(use)
     -- Fast status bar written in lua
     use { 
         'nvim-lualine/lualine.nvim',
-        requires = {'kyazdani42/nvim-web-devicons', opt = true}
+        requires = {'kyazdani42/nvim-web-devicons', opt = true},
+	config = function()
+	    require('lualine').setup {
+		options = { theme = 'iceberg_dark' },
+	    }
+	end,
     }
 
+    -- GitHub Copilot
     use {
 	'zbirenbaum/copilot.lua',
 	config = function()
