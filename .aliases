@@ -14,7 +14,7 @@ alias gpg-refresh='gpg --keyserver-options no-self-sigs-only --refresh-keys'
 
 # Replace program
 alias cat='bat'
-alias ls='exa --color=always --group-directories-first'
+alias ls='exa --group --color=always --group-directories-first'
 alias lt='exa -aT --color=always --group-directories-first'
 alias l.='exa -a | egrep "^\."'
 
