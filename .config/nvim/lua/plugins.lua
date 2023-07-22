@@ -56,8 +56,21 @@ packer.startup(function(use)
     -- GitHub Copilot
     use {
 	'zbirenbaum/copilot.lua',
+	cmd = 'Copilot',
+	event = 'InsertEnter',
 	config = function()
-	    require('copilot').setup({})
+	    require('copilot').setup({
+	        suggestion = {
+		    auto_trigger = true,
+		    keymap = {
+			accept = '<C-CR>',
+			accept_line = '<C-l>',
+			accept_word = '<C-w>',
+			next = '<C-k>',
+			prev = '<C-j>',
+		    }
+	        }
+	    })
 	end,
     }
 
