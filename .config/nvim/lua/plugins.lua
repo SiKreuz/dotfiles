@@ -50,7 +50,16 @@ packer.startup(function(use)
 	    require('lualine').setup {
 		options = { theme = 'iceberg_dark' },
 	    }
-	end,
+	end
+    }
+
+    -- Git
+    use {
+	'tanvirtin/vgit.nvim',
+	requires = {'nvim-lua/plenary.nvim'},
+ 	config = function()
+	    require('vgit').setup()
+	end
     }
 
     -- GitHub Copilot
