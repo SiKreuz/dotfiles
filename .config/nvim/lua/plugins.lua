@@ -19,10 +19,10 @@ if (not status) then
 end
 
 vim.cmd([[
-  augroup packer_user_config
+    augroup packer_user_config
     autocmd!
     autocmd BufWritePost plugins.lua source <afile> | PackerCompile
-  augroup end
+    augroup end
 ]])
 
 packer.startup(function(use)
@@ -46,41 +46,41 @@ packer.startup(function(use)
     use { 
         'nvim-lualine/lualine.nvim',
         requires = {'kyazdani42/nvim-web-devicons', opt = true},
-	config = function()
-	    require('lualine').setup {
-		options = { theme = 'iceberg_dark' },
-	    }
-	end
+        config = function()
+            require('lualine').setup {
+                options = { theme = 'iceberg_dark' },
+            }
+        end
     }
 
     -- Git
     use {
-	'tanvirtin/vgit.nvim',
-	requires = {'nvim-lua/plenary.nvim'},
- 	config = function()
-	    require('vgit').setup()
-	end
+        'tanvirtin/vgit.nvim',
+        requires = {'nvim-lua/plenary.nvim'},
+        config = function()
+            require('vgit').setup()
+        end
     }
 
     -- GitHub Copilot
     use {
-	'zbirenbaum/copilot.lua',
-	cmd = 'Copilot',
-	event = 'InsertEnter',
-	config = function()
-	    require('copilot').setup({
-	        suggestion = {
-		    auto_trigger = true,
-		    keymap = {
-			accept = '<C-CR>',
-			accept_line = '<C-l>',
-			accept_word = '<C-w>',
-			next = '<C-k>',
-			prev = '<C-j>',
-		    }
-	        }
-	    })
-	end,
+        'zbirenbaum/copilot.lua',
+        cmd = 'Copilot',
+        event = 'InsertEnter',
+        config = function()
+            require('copilot').setup({
+                suggestion = {
+                    auto_trigger = true,
+                    keymap = {
+                        accept = '<C-CR>',
+                        accept_line = '<C-l>',
+                        accept_word = '<C-w>',
+                        next = '<C-k>',
+                        prev = '<C-j>',
+                    }
+                }
+            })
+        end,
     }
 
     -- LSP settings
