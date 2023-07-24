@@ -62,6 +62,15 @@ packer.startup(function(use)
         end
     }
 
+    -- Completion
+    use {
+        'ms-jpq/coq_nvim',
+        branch = 'coq',
+        event = "VimEnter",
+        config = 'vim.cmd[[COQnow]]'
+    }
+    use { 'ms-jpq/coq.artifacts', branch = 'artifacts' }
+
     -- GitHub Copilot
     use {
         'zbirenbaum/copilot.lua',
