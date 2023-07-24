@@ -26,12 +26,16 @@ vim.cmd([[
 ]])
 
 packer.startup(function(use)
-    -- Packer can manage itself
-    use 'wbthomason/packer.nvim'
-
-    use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for neovim's built-in LSP
-    use 'neovim/nvim-lspconfig' -- LSP configs
-    use 'hrsh7th/nvim-cmp' -- Completion
+    use 'wbthomason/packer.nvim'  -- Packer can manage itself
+    
+    -- Completion
+    use {
+        'ms-jpq/coq_nvim',
+        branch = 'coq',
+        event = "VimEnter",
+        config = 'vim.cmd[[COQnow]]'
+    }
+    use { 'ms-jpq/coq.artifacts', branch = 'artifacts' }
 
     -- Gruvbox color theme
     use {
@@ -61,15 +65,6 @@ packer.startup(function(use)
             require('vgit').setup()
         end
     }
-
-    -- Completion
-    use {
-        'ms-jpq/coq_nvim',
-        branch = 'coq',
-        event = "VimEnter",
-        config = 'vim.cmd[[COQnow]]'
-    }
-    use { 'ms-jpq/coq.artifacts', branch = 'artifacts' }
 
     -- GitHub Copilot
     use {
