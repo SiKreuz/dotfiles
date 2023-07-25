@@ -2,9 +2,14 @@
 
 !.gitignore
 
+# ZSH
+!.zshrc
+!.p10k.zsh
+
+# Config
 !.config/
 !.config/*
 !.gnupg
 !.aliases
 !.gitconfig
-!.zshrc
+
