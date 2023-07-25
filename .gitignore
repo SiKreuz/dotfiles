@@ -10,6 +10,7 @@
 !.config/
 !.config/*
 !.gnupg
+!.gnupg/*
 !.aliases
 !.gitconfig
 
