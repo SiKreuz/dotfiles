@@ -1,2 +1,10 @@
-.config/nvim/plugin
+*
 
+!.gitignore
+
+!.config/
+!.config/*
+!.gnupg
+!.aliases
+!.gitconfig
+!.zshrc
