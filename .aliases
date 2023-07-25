@@ -21,3 +21,6 @@ alias l.='exa -a | egrep "^\."'
 # Other
 alias hs='history | grep'
 
+# Fun
+alias sl='sl | lolcat'
+
