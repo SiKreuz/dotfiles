@@ -28,6 +28,10 @@ if type nvim > /dev/null 2>&1; then
     alias vim='nvim'
 fi
 
+# GPG for SSH
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+gpgconf --launch gpg-agent
+
 # Zsh settings for history
 HISTORY_IGNORE="(ls|[bf]g|exit|reset|clear|cd|cd ..|cd..)"
 HISTSIZE=25000
