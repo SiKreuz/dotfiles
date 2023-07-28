@@ -58,13 +58,7 @@ packer.startup(function(use)
     }
 
     -- Git
-    use {
-        'tanvirtin/vgit.nvim',
-        requires = {'nvim-lua/plenary.nvim'},
-        config = function()
-            require('vgit').setup()
-        end
-    }
+    use 'airblade/vim-gitgutter'
 
     -- GitHub Copilot
     use {
