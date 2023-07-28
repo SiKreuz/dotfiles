@@ -44,6 +44,10 @@ packer.startup(function(use)
     use 'williamboman/mason-lspconfig.nvim'
 
     use {
+        'nvim-treesitter/nvim-treesitter',
+    }
+
+    use {
         'j-hui/fidget.nvim',
         tag = 'legacy',
         config = function()
