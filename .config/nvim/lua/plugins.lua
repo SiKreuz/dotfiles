@@ -27,15 +27,29 @@ vim.cmd([[
 
 packer.startup(function(use)
     use 'wbthomason/packer.nvim'  -- Packer can manage itself
-    
-    -- Completion
+
+    -- LSP settings
+    use 'neovim/nvim-lspconfig' -- LSP configs
+    use 'hrsh7th/nvim-cmp' -- Completion
+    use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for neovim's built-in LSP
+
+    -- Useful completion sources:
+    use 'hrsh7th/cmp-vsnip'
+    use 'hrsh7th/cmp-path'
+    use 'hrsh7th/cmp-buffer'
+    use 'hrsh7th/vim-vsnip'
+
+    -- Helper for installing LSP servers
+    use 'williamboman/mason.nvim'
+    use 'williamboman/mason-lspconfig.nvim'
+
     use {
-        'ms-jpq/coq_nvim',
-        branch = 'coq',
-        event = "VimEnter",
-        config = 'vim.cmd[[COQnow]]'
+        'j-hui/fidget.nvim',
+        tag = 'legacy',
+        config = function()
+            require("fidget").setup()
+        end
     }
-    use { 'ms-jpq/coq.artifacts', branch = 'artifacts' }
 
     -- Gruvbox color theme
     use {
@@ -57,7 +71,7 @@ packer.startup(function(use)
     }
 
     -- Fast status bar written in lua
-    use { 
+    use {
         'nvim-lualine/lualine.nvim',
         requires = {'kyazdani42/nvim-web-devicons', opt = true},
         config = function()
@@ -90,6 +104,9 @@ packer.startup(function(use)
             })
         end,
     }
+
+    -- Adds extra functionality over rust analyzer
+    use("simrat39/rust-tools.nvim")
 
     -- LSP settings
     if packer_bootstrap then
