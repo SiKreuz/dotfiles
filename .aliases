@@ -7,7 +7,7 @@ alias rm='rm  -i'
 alias ga='git add -A'
 alias cl='git clone'
 alias commit='git commit -m'
-alias track='git lg'
+alias gt='git lg'
 
 # GPG
 alias gpg-refresh='gpg --keyserver-options no-self-sigs-only --refresh-keys'
