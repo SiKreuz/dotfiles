@@ -21,6 +21,9 @@ alias top='btop'
 
 # Other
 alias hs='history | grep'
+pdfs() {
+    pdfgrep -i "$1" *.pdf
+}
 
 # Fun
 alias sl='sl | lolcat'
