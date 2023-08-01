@@ -6,6 +6,8 @@
 	gpgsign = true
 [push]
 	autoSetupRemote = true
+[pull]
+	ff = only
 [alias]
 	lg = lg1
 	lg1 = lg1-specific --all
