@@ -34,6 +34,8 @@ packer.startup(function(use)
     use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for neovim's built-in LSP
 
     -- Useful completion sources:
+    use 'hrsh7th/cmp-nvim-lua'
+    use 'hrsh7th/cmp-nvim-lsp-signature-help'
     use 'hrsh7th/cmp-vsnip'
     use 'hrsh7th/cmp-path'
     use 'hrsh7th/cmp-buffer'
@@ -43,9 +45,7 @@ packer.startup(function(use)
     use 'williamboman/mason.nvim'
     use 'williamboman/mason-lspconfig.nvim'
 
-    use {
-        'nvim-treesitter/nvim-treesitter',
-    }
+    use 'nvim-treesitter/nvim-treesitter'
 
     use {
         'j-hui/fidget.nvim',
