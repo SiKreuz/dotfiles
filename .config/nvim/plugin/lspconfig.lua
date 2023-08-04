@@ -36,29 +36,32 @@ local enable_format_on_save = function(_, bufnr)
     })
 end
 
+local rt = require("rust-tools")
+
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer.
 local on_attach = function(_, bufnr)
     -- Hover actions
-    vim.keymap.set("n", "<C-space>", rt.hover_actions.hover_actions, { buffer = bufnr })
+    vim.keymap.set("n", "zh", rt.hover_actions.hover_actions, { buffer = bufnr })
     -- Code action groups
     vim.keymap.set("n", "<Leader>a", rt.code_action_group.code_action_group, { buffer = bufnr })
 end
 
-local opts = {
-  server = {
-    on_attach = on_attach,
-    settings = {
-      ["rust-analyzer"] = {
-        checkOnSave = {
-          command = "clippy",
+rt.setup({
+    server = {
+        on_attach = function(_, bufnr)
+            enable_format_on_save(_, bufnr)
+            on_attach(_, bufnr)
+        end,
+        settings = {
+            ["rust-analyzer"] = {
+                checkOnSave = {
+                    command = "clippy",
+                },
+            },
         },
-      },
     },
-  },
-}
-
-require("rust-tools").setup(opts)
+})
 
 -- LSP Diagnostics Options Setup 
 local sign = function(opts)
