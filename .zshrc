@@ -50,6 +50,48 @@ if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi
 
+# Overwrite exa colors
+EXA_COLORS="
+  ur=1;35:
+  uw=1;35:
+  ux=1;35:
+  gr=1;34:
+  gw=1;34:
+  gx=1;34:
+  tr=1;33:
+  tw=1;33:
+  tx=1;33:
+  su=1;31:
+  sf=1;31:
+  xa=1;32:
+  sn=1;36:
+  sb=1;36:
+  da=1;35:
+  uu=1;35:
+  un=1;35:
+  cl=1;35:
+  di=1;34:
+  ln=1;36:
+  pi=1;33:
+  so=1;35:
+  bd=1;33:
+  cd=1;33:
+  or=1;31:
+  mi=1;36:
+  ex=1;32:
+  *.rs=1;31:
+  *.py=1;32:
+  *.c=1;35:
+  *.cpp=1;35:
+  *.h=1;35:
+  *.hpp=1;35:
+  *.js=1;33:
+  *.html=1;33:
+  *.css=1;36:
+  *.md=1;34
+"
+
+
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
