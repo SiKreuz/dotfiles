@@ -61,6 +61,11 @@ rt.setup({
             },
         },
     },
+    tools = {
+        hover_actions = {
+            auto_focus = true,
+        },
+    },
 })
 
 -- LSP Diagnostics Options Setup 

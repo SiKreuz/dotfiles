@@ -33,6 +33,15 @@ packer.startup(function(use)
     use 'hrsh7th/nvim-cmp' -- Completion
     use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for neovim's built-in LSP
 
+    use { 
+        'folke/neodev.nvim',
+        config = function()
+            require('neodev').setup({
+                library = { plugins = { "nvim-dap-ui" }, types = true }
+            })
+        end
+    }
+
     -- Useful completion sources:
     use 'hrsh7th/cmp-nvim-lua'
     use 'hrsh7th/cmp-nvim-lsp-signature-help'
@@ -46,6 +55,17 @@ packer.startup(function(use)
     use 'williamboman/mason-lspconfig.nvim'
 
     use 'nvim-treesitter/nvim-treesitter'
+
+    -- Debugging
+    use 'nvim-lua/plenary.nvim'
+    use 'mfussenegger/nvim-dap'
+    use {
+        'rcarriga/nvim-dap-ui',
+        requires = { 'mfussenegger/nvim-dap' },
+        config = function()
+            require('dapui').setup()
+        end
+    }
 
     use {
         'j-hui/fidget.nvim',
