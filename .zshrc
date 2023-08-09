@@ -50,5 +50,10 @@ if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi
 
+# Deskbird
+if [ -f ~/.deskbird ]; then
+    . ~/.deskbird
+fi
+
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
