@@ -1,7 +1,7 @@
 [user]
-	email = mail@monsi.org
+	email = simon@deskbird.com
 	name = Simon Kreuzer
-	signingkey = 731B8C67AA3670FF!
+	signingkey = 5E7FF8D3EFD9C440!
 [commit]
 	gpgsign = true
 [push]
