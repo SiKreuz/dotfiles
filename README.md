@@ -16,4 +16,5 @@
 - [`sl`](https://github.com/mtoyoda/sl): SL(1): Cure your bad habit of mistyping
 - [`lolcat`](https://github.com/busyloop/lolcat): Rainbows and unicorns!
 - [`pdfgrep`](https://gitlab.com/pdfgrep/pdfgrep): A tool to search text in PDF files.
+- [`thefuck`](https://github.com/nvbn/thefuck): Magnificent app which corrects your previous console command.
 

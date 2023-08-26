@@ -43,9 +43,12 @@ setopt HIST_IGNORE_SPACE
 setopt HIST_REDUCE_BLANKS
 setopt HIST_VERIFY
 
+eval $(thefuck --alias)
+
 # Alias
 if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
