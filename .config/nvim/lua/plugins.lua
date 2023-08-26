@@ -27,15 +27,53 @@ vim.cmd([[
 
 packer.startup(function(use)
     use 'wbthomason/packer.nvim'  -- Packer can manage itself
-    
-    -- Completion
-    use {
-        'ms-jpq/coq_nvim',
-        branch = 'coq',
-        event = "VimEnter",
-        config = 'vim.cmd[[COQnow]]'
+
+    -- LSP settings
+    use 'neovim/nvim-lspconfig' -- LSP configs
+    use 'hrsh7th/nvim-cmp' -- Completion
+    use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for neovim's built-in LSP
+
+    use { 
+        'folke/neodev.nvim',
+        config = function()
+            require('neodev').setup({
+                library = { plugins = { "nvim-dap-ui" }, types = true }
+            })
+        end
     }
-    use { 'ms-jpq/coq.artifacts', branch = 'artifacts' }
+
+    -- Useful completion sources:
+    use 'hrsh7th/cmp-nvim-lua'
+    use 'hrsh7th/cmp-nvim-lsp-signature-help'
+    use 'hrsh7th/cmp-vsnip'
+    use 'hrsh7th/cmp-path'
+    use 'hrsh7th/cmp-buffer'
+    use 'hrsh7th/vim-vsnip'
+
+    -- Helper for installing LSP servers
+    use 'williamboman/mason.nvim'
+    use 'williamboman/mason-lspconfig.nvim'
+
+    use 'nvim-treesitter/nvim-treesitter'
+
+    -- Debugging
+    use 'nvim-lua/plenary.nvim'
+    use 'mfussenegger/nvim-dap'
+    use {
+        'rcarriga/nvim-dap-ui',
+        requires = { 'mfussenegger/nvim-dap' },
+        config = function()
+            require('dapui').setup()
+        end
+    }
+
+    use {
+        'j-hui/fidget.nvim',
+        tag = 'legacy',
+        config = function()
+            require("fidget").setup()
+        end
+    }
 
     -- Gruvbox color theme
     use {
@@ -57,7 +95,7 @@ packer.startup(function(use)
     }
 
     -- Fast status bar written in lua
-    use { 
+    use {
         'nvim-lualine/lualine.nvim',
         requires = {'kyazdani42/nvim-web-devicons', opt = true},
         config = function()
@@ -90,6 +128,9 @@ packer.startup(function(use)
             })
         end,
     }
+
+    -- Adds extra functionality over rust analyzer
+    use("simrat39/rust-tools.nvim")
 
     -- LSP settings
     if packer_bootstrap then
