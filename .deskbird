@@ -2,6 +2,8 @@ alias proxystaging="~/cloud-sql-proxy --address 127.0.0.1 --port 1234 deskbird-p
 alias proxyproduction="~/cloud-sql-proxy --address 127.0.0.1 --port 1233 deskbird-bbe72:europe-west3:production-db"
 alias proxy404="~/cloud-sql-proxy --address 127.0.0.1 --port 1235 deskbird-sandbox-404:europe-west3:db"
 
+alias deploy404="/bin/bash /Users/simon/Documents/repos/deskbird-api/bin/deploy-sandbox-404"
+
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
-export PATH="/opt/homebrew/opt/node@18/bin:$PATH"
+export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
 
