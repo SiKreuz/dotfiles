@@ -4,9 +4,6 @@ alias mv='mv -i'
 alias rm='rm  -i'
 
 # Git
-alias ga='git add -A'
-alias cl='git clone'
-alias commit='git commit -m'
 alias gt='git lg'
 
 # GPG
