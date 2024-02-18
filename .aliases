@@ -15,6 +15,7 @@ alias ls='exa --group --color=always --group-directories-first'
 alias lt='exa -aT --color=always --group-directories-first'
 alias l.='exa -a | egrep "^\."'
 alias top='btop'
+alias fd='fd --no-ignore-vcs'
 
 # Other
 alias hs='history | grep'
