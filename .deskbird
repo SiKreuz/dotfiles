@@ -1,6 +1,7 @@
 alias proxystaging="~/cloud-sql-proxy --address 127.0.0.1 --port 1234 deskbird-prod:europe-west3:staging-db"
 alias proxyproduction="~/cloud-sql-proxy --address 127.0.0.1 --port 1233 deskbird-bbe72:europe-west3:production-db"
 alias proxy404="~/cloud-sql-proxy --address 127.0.0.1 --port 1235 deskbird-sandbox-404:europe-west3:db"
+alias proxytnw="~/cloud-sql-proxy --address 127.0.0.1 --port 1238 deskbird-sandbox-tnw:europe-west3:db"
 
 alias deploy404="/bin/bash /Users/simon/Documents/repos/deskbird-api/bin/deploy-sandbox-404"
 
