@@ -15,6 +15,7 @@
 - [`btop`](https://github.com/aristocratos/btop): A monitor of resources.
 - [`sl`](https://github.com/mtoyoda/sl): SL(1): Cure your bad habit of mistyping
 - [`lolcat`](https://github.com/busyloop/lolcat): Rainbows and unicorns!
+- [`git-extras`](https://github.com/tj/git-extras): GIT utilities -- repo summary, repl, changelog population, author commit percentages and more.
 - [`pdfgrep`](https://gitlab.com/pdfgrep/pdfgrep): A tool to search text in PDF files.
 - [`thefuck`](https://github.com/nvbn/thefuck): Magnificent app which corrects your previous console command.
 

@@ -5,6 +5,7 @@ alias rm='rm  -i'
 
 # Git
 alias gt='git lg'
+alias gdmb='git delete-merged-branches'
 
 # GPG
 alias gpg-refresh='gpg --keyserver-options no-self-sigs-only --refresh-keys'
