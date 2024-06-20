@@ -10,6 +10,10 @@
 
 ## Optional software for nice aliases
 
+- [`git-extras`](https://github.com/tj/git-extras): GIT utilities -- repo summary, repl, changelog population, author commit percentages and more.
+- [`forgit`](https://github.com/wfxr/forgit): 💤 A utility tool powered by fzf for using git interactively.
+- [`fzf`](https://github.com/junegunn/fzf): 🌸 A command-line fuzzy finder.
+- [`git-delta`](https://github.com/dandavison/delta): A syntax-highlighting pager for git, diff, grep, and blame output.
 - [`bat`](https://github.com/sharkdp/bat): A cat(1) clone with wings.
 - [`eza`](https://github.com/eza-community/eza): A modern replacement for ‘ls’.
 - [`btop`](https://github.com/aristocratos/btop): A monitor of resources.

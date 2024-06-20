@@ -11,6 +11,7 @@ plugins=(
   zsh-syntax-highlighting
   zsh-autosuggestions
   zsh-completions
+  forgit
 )
 
 autoload -U compinit && compinit
