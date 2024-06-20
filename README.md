@@ -11,7 +11,7 @@
 ## Optional software for nice aliases
 
 - [`bat`](https://github.com/sharkdp/bat): A cat(1) clone with wings.
-- [`exa`](https://github.com/ogham/exa): A modern replacement for ‘ls’.
+- [`eza`](https://github.com/eza-community/eza): A modern replacement for ‘ls’.
 - [`btop`](https://github.com/aristocratos/btop): A monitor of resources.
 - [`sl`](https://github.com/mtoyoda/sl): SL(1): Cure your bad habit of mistyping
 - [`lolcat`](https://github.com/busyloop/lolcat): Rainbows and unicorns!
