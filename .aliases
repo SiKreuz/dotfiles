@@ -11,7 +11,6 @@ alias gdmb='git delete-merged-branches'
 alias gpg-refresh='gpg --keyserver-options no-self-sigs-only --refresh-keys'
 
 # Replace program
-alias cat='bat'
 alias ls='eza --group --color=always --group-directories-first'
 alias lt='eza -aT --color=always --group-directories-first'
 alias l.='eza -a | egrep "^\."'

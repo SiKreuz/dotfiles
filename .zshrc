@@ -8,10 +8,30 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(
   git
+  git-auto-fetch
+  git-extras
   zsh-syntax-highlighting
   zsh-autosuggestions
   zsh-completions
+  zsh-interactive-cd
+  zsh-bat
+  you-should-use
   forgit
+  aliases
+  dotenv
+  brew
+  bun
+  copyfile
+  copypath
+  docker
+  docker-compose
+  fd
+  macos
+  node
+  nodenv
+  thefuck
+  rust
+  screen
 )
 
 autoload -U compinit && compinit
@@ -43,8 +63,6 @@ setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_SPACE
 setopt HIST_REDUCE_BLANKS
 setopt HIST_VERIFY
-
-eval $(thefuck --alias)
 
 # Alias
 if [ -f ~/.aliases ]; then
