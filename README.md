@@ -17,6 +17,7 @@
 - [`bat`](https://github.com/sharkdp/bat): A cat(1) clone with wings.
 - [`eza`](https://github.com/eza-community/eza): A modern replacement for ‘ls’.
 - [`btop`](https://github.com/aristocratos/btop): A monitor of resources.
+- [`rsync`](https://github.com/RsyncProject/rsync): An open source utility that provides fast incremental file transfer. It also has useful features for backup and restore operations among many other use cases.
 - [`sl`](https://github.com/mtoyoda/sl): SL(1): Cure your bad habit of mistyping
 - [`lolcat`](https://github.com/busyloop/lolcat): Rainbows and unicorns!
 - [`git-extras`](https://github.com/tj/git-extras): GIT utilities -- repo summary, repl, changelog population, author commit percentages and more.

@@ -16,6 +16,7 @@ alias lt='eza -aT --color=always --group-directories-first'
 alias l.='eza -a | egrep "^\."'
 alias top='btop'
 alias fd='fd --no-ignore-vcs'
+alias cp='rsync -aAXh --info=progress2'
 
 # Other
 alias hs='history | grep'
