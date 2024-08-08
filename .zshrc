@@ -25,7 +25,6 @@ plugins=(
   copypath
   docker
   docker-compose
-  fd
   macos
   node
   nodenv
