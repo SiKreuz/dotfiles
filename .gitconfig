@@ -11,3 +11,5 @@
 [core]
 	autocrlf = input
     pager = delta
+[sequence]
+    editor = interactive-rebase-tool

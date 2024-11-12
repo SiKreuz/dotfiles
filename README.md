@@ -14,13 +14,13 @@
 - [`forgit`](https://github.com/wfxr/forgit): 💤 A utility tool powered by fzf for using git interactively.
 - [`fzf`](https://github.com/junegunn/fzf): 🌸 A command-line fuzzy finder.
 - [`git-delta`](https://github.com/dandavison/delta): A syntax-highlighting pager for git, diff, grep, and blame output.
+- [`git-interactive-rebase-tool`](https://github.com/MitMaro/git-interactive-rebase-tool): Native cross-platform full feature terminal-based sequence editor for git interactive rebase.
 - [`bat`](https://github.com/sharkdp/bat): A cat(1) clone with wings.
 - [`eza`](https://github.com/eza-community/eza): A modern replacement for ‘ls’.
 - [`btop`](https://github.com/aristocratos/btop): A monitor of resources.
 - [`rsync`](https://github.com/RsyncProject/rsync): An open source utility that provides fast incremental file transfer. It also has useful features for backup and restore operations among many other use cases.
 - [`sl`](https://github.com/mtoyoda/sl): SL(1): Cure your bad habit of mistyping
 - [`lolcat`](https://github.com/busyloop/lolcat): Rainbows and unicorns!
-- [`git-extras`](https://github.com/tj/git-extras): GIT utilities -- repo summary, repl, changelog population, author commit percentages and more.
 - [`pdfgrep`](https://gitlab.com/pdfgrep/pdfgrep): A tool to search text in PDF files.
 - [`thefuck`](https://github.com/nvbn/thefuck): Magnificent app which corrects your previous console command.
 
