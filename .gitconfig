@@ -7,7 +7,7 @@
 [push]
 	autoSetupRemote = true
 [pull]
-	ff = only
+    rebase = true
 [core]
 	autocrlf = input
     pager = delta
