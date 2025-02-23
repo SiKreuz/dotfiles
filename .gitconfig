@@ -8,6 +8,8 @@
 	autoSetupRemote = true
 [pull]
     rebase = true
+[rebase]
+    autostash = true
 [core]
 	autocrlf = input
     pager = delta
