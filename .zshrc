@@ -31,6 +31,8 @@ plugins=(
   thefuck
   rust
   screen
+  aws
+  kubectl
 )
 
 autoload -U compinit && compinit
