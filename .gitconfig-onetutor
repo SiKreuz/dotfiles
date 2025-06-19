@@ -1,0 +1,4 @@
+[user]
+    email = simon@onetutor.ai
+[commit]
+    gpgsign = false

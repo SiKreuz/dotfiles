@@ -15,3 +15,5 @@
     pager = delta
 [sequence]
     editor = interactive-rebase-tool
+[includeIf "gitdir:~/Documents/OneTutor/"]
+    path = ~/.gitconfig-onetutor
