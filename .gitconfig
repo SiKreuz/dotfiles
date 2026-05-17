@@ -13,6 +13,7 @@
 [core]
 	autocrlf = input
     pager = delta
+	excludesfile = /Users/simon/.gitignore_global
 [sequence]
     editor = interactive-rebase-tool
 [includeIf "gitdir:~/Documents/OneTutor/"]
