@@ -4,9 +4,13 @@ alias mv='mv -i'
 alias rm='rm  -i'
 
 # Git
-alias gt='git lg'
 alias gdmb='git delete-merged-branches'
 alias gcu='gfa && g prune && gdmb && gh poi'
+
+# Linting
+alias zefix='bun run check:fix'
+alias zack='gt submit'
+alias zackzack='gt submit --no-verify'
 
 # GPG
 alias gpg-refresh='gpg --keyserver-options no-self-sigs-only --refresh-keys'
